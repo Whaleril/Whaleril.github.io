@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 王薇的个人博客</title>
+    <link>https://Whaleril.github.io/tags/</link>
+    <description>Recent content in Tags on 王薇的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 16 Oct 2024 15:11:18 +0800</lastBuildDate>
+    <atom:link href="https://Whaleril.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ds</title>
+      <link>https://Whaleril.github.io/tags/ds/</link>
+      <pubDate>Wed, 16 Oct 2024 15:11:18 +0800</pubDate>
+      <guid>https://Whaleril.github.io/tags/ds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>themes</title>
+      <link>https://Whaleril.github.io/tags/themes/</link>
+      <pubDate>Wed, 16 Oct 2024 15:11:18 +0800</pubDate>
+      <guid>https://Whaleril.github.io/tags/themes/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

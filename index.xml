@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>王薇的个人博客</title>
+    <link>https://Whaleril.github.io/</link>
+    <description>Recent content on 王薇的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 17 Oct 2024 22:15:51 +0800</lastBuildDate>
+    <atom:link href="https://Whaleril.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于我们</title>
+      <link>https://Whaleril.github.io/page/contact/</link>
+      <pubDate>Thu, 17 Oct 2024 22:15:51 +0800</pubDate>
+      <guid>https://Whaleril.github.io/page/contact/</guid>
+      <description>我是谁？ 我是一个hugo使用者</description>
+    </item>
+    <item>
+      <title>数据结构之单链表的基本应用</title>
+      <link>https://Whaleril.github.io/posts/my-first-post/</link>
+      <pubDate>Wed, 16 Oct 2024 15:11:18 +0800</pubDate>
+      <guid>https://Whaleril.github.io/posts/my-first-post/</guid>
+      <description>单链表基本运算 指针操作的难点： 在插入和删除节点时，指针的操作比较复杂，特别是在处理第一个节点和最后一个节点时。如果不小心，可能会导致内存泄漏或者链表断裂。&#xA;边界条件处理： 在进行插入和删除操作时，必须考虑链表为空、只有一个节点等特殊情况。这些边界条件的处理容易被忽略，导致程序出现错误。&#xA;伪代码&#xA;typedef int ElemType;//定义元素类型为整型 typedef struct Node { ElemType data; struct Node*next; }Node,*LinkList; //插入 void add(LinkList&amp;amp; L,int i,ElemType e) { LinkList p=L;//定义一个指向头节点的指针 j = 0; //找到第i-1个节点 while(p!=NULL &amp;amp;&amp;amp; j&amp;lt;i-1) { p = p-&amp;gt;next; j++; } if(p!=NULL) { LinkList t = new Node; t-&amp;gt;data=e; t-&amp;gt;next=p-&amp;gt;next; p-&amp;gt;next=t; }else{ return Error; } } </description>
+    </item>
+    <item>
+      <title>数据结构之约瑟夫问题</title>
+      <link>https://Whaleril.github.io/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://Whaleril.github.io/posts/creating-a-new-theme/</guid>
+      <description>约瑟夫问题 题目：n个人围成一圈，初始编号从1~n排列，从约定编号为x的人开始报数，数到第m个人出圈，接着又从1开始报数，报到第m个数的人又退出圈，以此类推，最后圈内只剩下一个人，这个人就是赢家，求出赢家的编号。&#xA;问题理解：一开始对约瑟夫问题的理解不够深入，尤其是在如何正确模拟出循环链表的特点。在实现时需要确保正确维护环状结构以保证每个节点都能按顺序被剔除。&#xA;循环链表的实现：实现循环链表时，面临指针的复杂管理，尤其是在确定当前节点及其下一个节点的过程中，常常出现死循环或访问非法内存的错误。&#xA;调试困难：由于涉及多次节点的删除及指针的跳转，调试过程中错误不易发现，尤其是在链表较长时，追踪节点的状态需要耗费较多精力，导致调试效率低下。&#xA;伪代码&#xA;struct Node{ int number; int password; Node *next; }; //创建循环列表 Node* List(int n,int passwords[]){ Node* head = NULL; Node* tail = NULL; for (int i=0;i&amp;lt;n;++i){ Node* t = new Node(); t-&amp;gt;number = i+1;//编号从1开始 t-&amp;gt;password = passwords[i]; t-&amp;gt;next = NULL; if(!head){ head = t; tail = t; } else{ tail-&amp;gt;next = t; tail = t; } } //建立循环 if(tail){ tail-&amp;gt;next = head; } return head; } void Joseph(Node*&amp;amp; head,int&amp;amp; m){ Node* k = head; Node* q = NULL; while(k-&amp;gt;next !</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>https://Whaleril.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Whaleril.github.io/about/</guid>
+      <description>个人履历： 2023年本科西安电子科技大学软件工程专业 CET4 582分 CET6 606分 2024年一等奖学金获得者 全国大学生英语竞赛国家一等奖 西安电子科技大学第十四届“挑战杯”中国大学生创业计划竞赛校赛金奖 计算机科学与技术学院团委组织部任职 计算机科学与技术学院科协运营部任职 Fusce auctor in justo nec porta. Aliquam vitae molestie libero. In scelerisque dolor ac est lacinia, at consectetur neque vulputate. Curabitur ornare lorem vitae euismod vestibulum. Sed non arcu nunc. Suspendisse potenti. Maecenas tristique, dui egestas mattis pulvinar, tortor ligula mollis libero, ac ullamcorper erat nibh in augue. Curabitur nunc diam, pretium at porta et, volutpat sit amet ligula. Proin urna lorem, luctus sit amet metus quis, tempus rutrum augue.</description>
+    </item>
+  </channel>
+</rss>
